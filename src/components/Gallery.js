@@ -1,10 +1,9 @@
-import ImageContainer from "./ImageContainer";
 import {useState, useEffect} from 'react';
 import Spinner from "./Spinner";
 import Button from  "./Button";
 import Title from "./Title";
 import ImagesRender from "./ImagesRender";
-const Gallerey = ()=> {
+const Gallery = ()=> {
     const [images, setImages] = useState([]);
     const [isLoading,setLoading] = useState(true);
     const [page, setPage] = useState(1);
@@ -36,4 +35,4 @@ const Gallerey = ()=> {
         </div>
     )
 }
-export default Gallerey;
+export default Gallery;

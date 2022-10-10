@@ -1,7 +1,7 @@
-import Gallerey from "./components/Gallerey";
+import Gallery from "./components/Gallery";
 function App() {
     return (
-        <Gallerey/>
+        <Gallery/>
   );
 }
 
