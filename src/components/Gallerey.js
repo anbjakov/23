@@ -14,11 +14,7 @@ const Gallerey = ()=> {
         fetch(`https://picsum.photos/v2/list?page=${page}&limit=10`).
         then((response)=>response.json()).
         then((pageImagesArray)=> {
-            setImages((nextImages)=>{
-                nextImages = images.slice();
-                nextImages.push(...pageImagesArray);
-                return nextImages;
-            })
+            setImages([...images,...pageImagesArray])
         })
         setLoading(false);
 
