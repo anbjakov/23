@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import Spinner from "./Spinner";
 import Button from  "./Button";
 import Title from "./Title";
-import ImagesRender from "./ImagesRender";
+import Images from "./Images";
 const Gallery = ()=> {
     const [images, setImages] = useState([]);
     const [isLoading,setLoading] = useState(true);
