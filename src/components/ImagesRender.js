@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types'
 import ImageContainer from "./ImageContainer";
-const ImagesRender =({images})=>{
+const Images =({images})=>{
     return (
         images.map(({id, download_url})=><ImageContainer key={id} imageUrl={download_url}/>)
     )
 }
-ImagesRender.propType = {
+Images.propType = {
     images: PropTypes.shape({
         download_url: PropTypes.string.isRequired,
         id: PropTypes.string.isRequired
     })
 }
-export default ImagesRender;
+export default Images;

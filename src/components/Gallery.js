@@ -29,7 +29,7 @@ const Gallery = ()=> {
         <div className="container text-center">
             <Title>IMAGE GALLERY</Title>
           <div className="row">
-              <ImagesRender images={images}/>
+              <Images images={images}/>
         </div>
             <Button onClick={increasePageNumber}>Show more</Button>
         </div>
