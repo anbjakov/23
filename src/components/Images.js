@@ -1,8 +1,16 @@
 import PropTypes from 'prop-types'
-import ImageContainer from "./ImageContainer";
 const Images =({images})=>{
     return (
-        images.map(({id, download_url})=><ImageContainer key={id} imageUrl={download_url}/>)
+        <div className="row">
+            {
+                images.map(({id, download_url})=>(
+                    <div className="w-50" key={id}>
+                    <img src={download_url}
+                         className="img-fluid border border-5 border-white h-auto"
+                         style={{backgroundColor: "grey"}}/>
+                </div>))
+            }
+        </div>
     )
 }
 Images.propType = {

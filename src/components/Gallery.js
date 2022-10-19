@@ -19,7 +19,7 @@ const Gallery = ()=> {
 
         },[page])
 
-        const increasePageNumber = ()=>{
+        const handleShowMore  = ()=>{
         setPage((prevPage)=>prevPage+1)
         }
        if (isLoading) {
@@ -31,7 +31,7 @@ const Gallery = ()=> {
           <div className="row">
               <Images images={images}/>
         </div>
-            <Button onClick={increasePageNumber}>Show more</Button>
+            <Button onClick={handleShowMore}>Show more</Button>
         </div>
     )
 }
